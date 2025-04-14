@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<title>Food Blogger</title>
+<style>
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #A1371B;
+        padding: 15px 30px;
+        font-family: Arial;
+    }
+
+    body {
+        background-color: #FCEFDE;
+    }
+
+    #logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    .nav {
+        display: flex;
+        gap: 100px;
+        color: white;
+        font-size: 20px;
+        font-family: NanumGothic;
+
+    }
+
+    .banner-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .banner-container img {
+        width: 100%;
+        height: auto;
+        image-rendering: auto;
+    }
+
+    .banner-text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 64px;
+        font-family: SUIT;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        text-align: center;
+    }
+
+    .banner-container2 {
+        position: relative;
+        width: 100%;
+    }
+
+    .banner-container2 img {
+        width: 60%;
+        height: auto;
+        image-rendering: auto;
+    }
+
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 69%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 64px;
+        font-family: SUIT;
+        text-align: left;
+    }
+
+    .text2 {
+        position: absolute;
+        top: 69%;
+        left: 69%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: NanumGothic;
+        text-align: left;
+        line-height: 2;
+    }
+
+    .banner-container3 {
+        position: absolute;
+        top: 220%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        height: auto;
+    }
+
+    .banner-container3 img {
+        width: 80%;
+        height: auto;
+        image-rendering: auto;
+    }
+
+    .banner-container4 {
+        position: relative;
+        width: 100%;
+    }
+
+    .banner-container4 img {
+        width: 30%;
+        height: auto;
+        image-rendering: auto;
+
+        padding-top: 5%;
+    }
+
+    .text3 {
+        position: absolute;
+        top: 15%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 64px;
+        font-family: SUIT;
+        text-align: center;
+    }
+
+    .text4 {
+        position: absolute;
+        top: 26%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 32px;
+        font-family: SUIT;
+        text-align: center;
+    }
+
+    .text5 {
+        position: absolute;
+        top: 70%;
+        left: 63.2%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: NanumGothic;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .banner-container5 img {
+        width: 40%;
+        height: auto;
+        image-rendering: auto;
+        padding-right: 50%;
+    }
+
+    .cta-button {
+        display: block;
+        padding: 10px 60px;
+        font-size: 32px;
+        font-family: Arial, sans-serif;
+        color: white;
+        background: linear-gradient(90deg, #1F4F3D, #A1371B);
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .banner-container6 {
+        position: relative;
+        width: 100%;
+    }
+
+    .banner-container6 img {
+        width: 30%;
+        height: auto;
+        image-rendering: auto;
+        padding-top: 15%;
+    }
+
+    .text6 {
+        position: absolute;
+        top: 35%;
+        left: 56.5%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 64px;
+        font-family: SUIT;
+        text-align: center;
+    }
+
+    .text7 {
+        position: absolute;
+        top: 43%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 32px;
+        font-family: SUIT;
+        text-align: center;
+    }
+
+    .text8 {
+        position: absolute;
+        top: 80%;
+        left: 63.2%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: NanumGothic;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .banner-container7 img {
+        width: 35%;
+        image-rendering: auto;
+        padding-right: 50%;
+    }
+
+    .banner-container8 {
+        position: absolute;
+        top: 300%;
+        left: 82%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        height: auto;
+    }
+
+    .banner-container8 img {
+        width: 130%;
+        height: auto;
+        image-rendering: auto;
+    }
+
+    .banner-container9 {
+        position: absolute;
+        top: 390%;
+        left: 82%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        height: auto;
+    }
+
+    .banner-container9 img {
+        width: 130%;
+        height: auto;
+        image-rendering: auto;
+    }
+
+    .banner-container10 {
+        position: relative;
+        width: 100%;
+    }
+
+    .banner-container10 img {
+        width: 30%;
+        height: auto;
+        image-rendering: auto;
+        padding-top: 20%;
+    }
+
+    .text9 {
+        position: absolute;
+        top: 40%;
+        left: 55.5%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 64px;
+        font-family: SUIT;
+        text-align: center;
+    }
+
+    .text10 {
+        position: absolute;
+        top: 46%;
+        left: 54.5%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 32px;
+        font-family: SUIT;
+        text-align: center;
+    }
+
+    .text11 {
+        position: absolute;
+        top: 80%;
+        left: 63.2%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: NanumGothic;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .banner-container11 img {
+        width: 40%;
+        height: auto;
+        image-rendering: auto;
+        padding-right: 50%;
+    }
+
+    .footer-container {
+        max-width: 1280px;
+        background-color: #74c69d;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .footer-icon {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .footer-text {
+        color: white;
+        text-align: right;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="logo"><img src="image/logo.png"></div>
+        <div class="nav">
+            <div>Restaurant</div>
+            <div>About Me</div>
+            <div>Promotion</div>
+            <div>History</div>
+            <div>Location</div>
+        </div>
+    </header>
+    <div class="banner-container">
+        <img src="image/photo.png" alt="Food Banner">
+        <div class="banner-text">WELCOME TO KOREAN FRIED CHICKEN BLOG</div>
+    </div>
+
+    <div class="banner-container2">
+        <img src="image/photo2.png" alt="food">
+        <div class="text">
+            FLOVOURFUL KOREAN FRIED CHICKEN
+        </div>
+        <div class="text2">
+            Korean fried chicken is crispy, juicy, and coated in a sweet, spicy gochujang sauce. Double-fried for extra
+            crunch, it’s a bold and addictive treat in every bite.
+        </div>
+    </div>
+    <div class="banner-container3">
+        <img src="image/chili.png">
+    </div>
+
+    <div class="banner-container4">
+        <img src="image/food.png" alt="friedchicken">
+        <div class="text3">Kyochon 1991</div>
+        <div class="text4">Honey Garlic Chicken</div>
+        <div class="text5">You can taste the sweet honey garlic flavor and the light spicy flavor in every bite. The
+            fried chicken is also very crispy. Korean Honey Garlic Chicken is a deliciously crispy and flavorful dish
+            that combines the bold flavors of Korean cuisine with the sweet and savory kick of honey and garlic.
+            <div class="banner-container5"><img src="image/star.png" alt="review"></div>
+            <button class="cta-button">Read More</button>
+        </div>
+    </div>
+    <div class="banner-container8">
+        <img src="image/garlic.png">
+    </div>
+
+    <div class="banner-container6">
+        <img src="image/food2.png" alt="friedchicken">
+        <div class="text6">Nanda Chicken</div>
+        <div class="text7">Soy Garlic Chicken</div>
+        <div class="text8">This soy sauce garlic fried chicken is really not to be missed! The skin is crispy, and the
+            sauce is sweet, salty, and garlicky. It is super delicious and is perfect with rice and beer. The taste is
+            not spicy and is easy to accept. It is a great introduction to Nanda Chicken for the first time.
+            <div class="banner-container7"><img src="image/star2.png" alt="review"></div>
+            <button class="cta-button">Read More</button>
+        </div>
+    </div>
+    <div class="banner-container9">
+        <img src="image/pepper.png">
+    </div>
+
+    <div class="banner-container10">
+        <img src="image/food3.png" alt="friedchicken">
+        <div class="text9">Jinjja Chicken</div>
+        <div class="text10">K Cheese Platter Chicken</div>
+        <div class="text11">K-Cheese Platter is a paradise for cheese lovers! There are fried chicken wings and
+            drumsticks to choose from, plus French fries and K-Pop Chicken, a large plate of mozzarella + nacho cheese
+            with a full texture. The aroma of cheese and the crispiness of fried chicken are perfectly blended. You
+            can't stop eating it one bite after another.
+            <div class="banner-container11"><img src="image/star.png" alt="review"></div>
+            <button class="cta-button">Read More</button>
+        </div>
+    </div>
+</body>
+
+<div id="footer-container">
+    <div id="footer-info">
+        <img src="image/contact.png">
+    </div>
+    <div id="footer-text">
+        <div>Copyright | 2025 Korean Fried Chicken Food Blogger</div>
+    </div>
+    <div class="footer-icon">
+        <div><img src="image/instargram.png"></div>
+        <div><img src="image/facebook.png"></div>
+    </div>
+</div>
+
+</html>
