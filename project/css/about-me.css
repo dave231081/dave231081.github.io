@@ -29,6 +29,7 @@ body {
 }
 
 .image-banner {
+    position: relative;
     width: 80%;
     margin-top: 10%;
     margin-left: 10%;
@@ -42,7 +43,7 @@ body {
 
 .title {
     position: absolute;
-    top: 35%;
+    top: 3%;
     left: 52.7%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
@@ -53,8 +54,8 @@ body {
 
 .body-text {
     position: absolute;
-    top: 49%;
-    left: 68.5%;
+    top: 20%;
+    left: 66.6%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     font-size: 1vw;
@@ -66,8 +67,8 @@ body {
 
 .second-title {
     position: absolute;
-    top: 65%;
-    left: 57.6%;
+    top: 40%;
+    left: 58.6%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     font-size: 3vw;
@@ -77,8 +78,8 @@ body {
 
 .secondbody-text {
     position: absolute;
-    top: 80%;
-    left: 68.7%;
+    top: 60%;
+    left: 66.9%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     font-size: 1vw;
@@ -90,8 +91,8 @@ body {
 
 .third-title {
     position: absolute;
-    top: 100%;
-    left: 60%;
+    top: 83%;
+    left: 62%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     font-size: 3vw;
@@ -101,8 +102,8 @@ body {
 
 .thirdbody-text {
     position: absolute;
-    top: 115%;
-    left: 68.7%;
+    top: 104%;
+    left: 67%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     font-size: 1vw;
