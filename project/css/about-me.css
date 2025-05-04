@@ -29,23 +29,21 @@ body {
 }
 
 .image-banner {
-    position: relative;
-    width: 80%;
-    margin-top: 10%;
-    margin-left: 10%;
+    display: flex;
 }
 
 .image-banner img {
-    width: 40%;
+    width: 85%;
     height: auto;
     border-radius: 5%;
+    display: block;
+    margin-left: 150px;
+    margin-top: 150px;
 }
 
 .title {
-    position: absolute;
-    top: 3%;
-    left: 52.7%;
-    transform: translate(-50%, -50%);
+    margin-left: 5%;
+    margin-top: 11%;
     color: rgb(0, 0, 0);
     font-size: 3vw;
     font-family: SUIT;
@@ -53,23 +51,19 @@ body {
 }
 
 .body-text {
-    position: absolute;
-    top: 20%;
-    left: 66.6%;
-    transform: translate(-50%, -50%);
+    margin-top: 1%;
+    margin-left: 5%;
     color: rgb(0, 0, 0);
     font-size: 1vw;
     font-family: NanumGothic;
     text-align: justify;
-    width: 45%;
+    width: 80%;
     line-height: 2;
 }
 
 .second-title {
-    position: absolute;
-    top: 40%;
-    left: 58.6%;
-    transform: translate(-50%, -50%);
+    margin-left: 5%;
+    margin-top: 4%;
     color: rgb(0, 0, 0);
     font-size: 3vw;
     font-family: SUIT;
@@ -77,23 +71,19 @@ body {
 }
 
 .secondbody-text {
-    position: absolute;
-    top: 60%;
-    left: 66.9%;
-    transform: translate(-50%, -50%);
+    margin-top: 1%;
+    margin-left: 5%;
     color: rgb(0, 0, 0);
     font-size: 1vw;
     font-family: NanumGothic;
     text-align: justify;
-    width: 45%;
+    width: 80%;
     line-height: 2;
 }
 
 .third-title {
-    position: absolute;
-    top: 83%;
-    left: 62%;
-    transform: translate(-50%, -50%);
+    margin-left: 5%;
+    margin-top: 4%;
     color: rgb(0, 0, 0);
     font-size: 3vw;
     font-family: SUIT;
@@ -101,15 +91,13 @@ body {
 }
 
 .thirdbody-text {
-    position: absolute;
-    top: 104%;
-    left: 67%;
-    transform: translate(-50%, -50%);
+    margin-top: 1%;
+    margin-left: 5%;
     color: rgb(0, 0, 0);
     font-size: 1vw;
     font-family: NanumGothic;
     text-align: justify;
-    width: 45%;
+    width: 80%;
     line-height: 2;
 }
 
@@ -119,7 +107,6 @@ body {
     margin-top: 10%;
     text-align: center;
     color: white;
-    width: 100%;
 }
 
 .footer-info {

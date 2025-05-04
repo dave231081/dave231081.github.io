@@ -10,6 +10,7 @@ header {
 body {
     background-color: #FCEFDE;
     margin: 0%;
+    padding: 0%;
     display: flex;
     flex-direction: column;
 }
@@ -23,7 +24,7 @@ body {
     display: flex;
     gap: 100px;
     color: white;
-    font-size: 20px;
+    font-size: 1vw;
     font-family: NanumGothic;
 
 }
@@ -53,21 +54,24 @@ body {
 }
 
 .foodbanner-container {
-    position: relative;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .foodbanner-container img {
-    width: 60%;
+    width: 110%;
     height: auto;
-    image-rendering: auto;
+
+}
+
+.text-container {
+    margin-top: 10px;
 }
 
 .title {
-    position: absolute;
-    top: 50%;
-    left: 69%;
-    transform: translate(-50%, -50%);
+    width: 50%;
+    padding-bottom: 5%;
     color: rgb(0, 0, 0);
     font-size: 4vw;
     font-family: SUIT;
@@ -75,66 +79,54 @@ body {
 }
 
 .body-text {
-    position: absolute;
-    top: 70%;
-    left: 69.3%;
-    transform: translate(-50%, -50%);
+    width: 80%;
     color: rgb(0, 0, 0);
     font-size: 1vw;
     font-family: NanumGothic;
-    text-align: left;
+    text-align: justify;
     line-height: 2;
 }
 
 .chili {
-    position: absolute;
-    top: 220%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-    width: 20%;
+    position: relative;
+    left: 70%;
+    width: 25%;
     height: auto;
 }
 
 .kyochon-container {
-    position: relative;
-    width: 100%;
+    display: flex;
+    padding-top: 10%;
 }
 
 .kyochon-container img {
-    width: 30%;
-    height: auto;
+    width: 57%;
+    height: 80%;
     image-rendering: auto;
-
-    padding-top: 5%;
 }
 
 .kyochonmenutitle {
-    position: absolute;
-    top: 15%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-left: 10%;
     color: rgb(0, 0, 0);
     font-size: 4vw;
     font-family: SUIT;
-    text-align: center;
+    text-align: left;
 }
 
 .kyochonmenusubtitle {
-    position: absolute;
-    top: 29%;
-    left: 52.7%;
-    transform: translate(-50%, -50%);
+    width: 90%;
+    padding-left: 10%;
     color: rgb(0, 0, 0);
     font-size: 2vw;
     font-family: SUIT;
-    text-align: center;
+    text-align: left;
 }
 
 .kyochonmenubodytext {
-    position: absolute;
-    top: 70%;
-    left: 62%;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 4%;
     color: rgb(0, 0, 0);
     font-size: 1vw;
     font-family: NanumGothic;
@@ -143,11 +135,12 @@ body {
 }
 
 .image {
-    width: 150%;
+    width: 40%;
     height: auto;
     image-rendering: auto;
     padding-right: 50%;
-    padding-bottom: 3%;
+    padding-top: 10%;
+    padding-bottom: 2%;
 }
 
 .cta-button {
@@ -165,44 +158,37 @@ body {
 }
 
 .nanda-container {
-    position: relative;
-    width: 100%;
+    display: flex;
 }
 
 .nanda-container img {
-    width: 30%;
-    height: auto;
+    width: 55%;
+    height: 80%;
     image-rendering: auto;
-    padding-top: 15%;
 }
 
 .nandamenutitle {
-    position: absolute;
-    top: 35%;
-    left: 56.5%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-left: 10%;
     color: rgb(0, 0, 0);
     font-size: 4vw;
     font-family: SUIT;
-    text-align: center;
+    text-align: left;
 }
 
 .nandamenusubtitle {
-    position: absolute;
-    top: 45%;
-    left: 51.3%;
-    transform: translate(-50%, -50%);
+    width: 90%;
+    padding-left: 10%;
     color: rgb(0, 0, 0);
     font-size: 2vw;
     font-family: SUIT;
-    text-align: center;
+    text-align: left;
 }
 
 .nandamenubodytext {
-    position: absolute;
-    top: 80%;
-    left: 61.9%;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 4%;
     color: rgb(0, 0, 0);
     font-size: 1vw;
     font-family: NanumGothic;
@@ -211,14 +197,16 @@ body {
 }
 
 .image2 img {
-    width: 35%;
+    width: 20%;
+    height: auto;
     image-rendering: auto;
     padding-right: 50%;
+    padding-top: 10%;
+    padding-bottom: 2%;
 }
 
 .garlicimage {
-    position: absolute;
-    top: 300%;
+    position: relative;
     left: 82%;
     transform: translate(-50%, -50%);
     width: 20%;
@@ -232,7 +220,7 @@ body {
 }
 
 .pepperimage {
-    position: absolute;
+    position: relative;
     top: 390%;
     left: 82%;
     transform: translate(-50%, -50%);
@@ -247,45 +235,38 @@ body {
 }
 
 .jinjja-container {
-    position: relative;
-    width: 100%;
+    display: flex;
 }
 
 .jinjja-container img {
     width: 30%;
-    height: auto;
+    height: 80%;
     image-rendering: auto;
-    padding-top: 20%;
 
 }
 
 .jinjjamenutitle {
-    position: absolute;
-    top: 40%;
-    left: 55.5%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-left: 10%;
     color: rgb(0, 0, 0);
     font-size: 4vw;
     font-family: SUIT;
-    text-align: center;
+    text-align: left;
 }
 
 .jinjjamenusubtitle {
-    position: absolute;
-    top: 48%;
-    left: 54.4%;
-    transform: translate(-50%, -50%);
+    width: 90%;
+    padding-left: 10%;
     color: rgb(0, 0, 0);
     font-size: 2vw;
     font-family: SUIT;
-    text-align: center;
+    text-align: left;
 }
 
 .jinjjamenubodytext {
-    position: absolute;
-    top: 80%;
-    left: 61.9%;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 4%;
     color: rgb(0, 0, 0);
     font-size: 1vw;
     font-family: NanumGothic;
@@ -294,10 +275,12 @@ body {
 }
 
 .image3 img {
-    width: 40%;
+    width: 25%;
     height: auto;
     image-rendering: auto;
     padding-right: 50%;
+    padding-top: 10%;
+    padding-bottom: 2%;
 }
 
 .footer {
@@ -306,7 +289,6 @@ body {
     margin-top: 10%;
     text-align: center;
     color: white;
-    width: 100%;
 }
 
 .footer-info {
